@@ -1,0 +1,35 @@
+GET http://localhost:3000/movies
+
+###
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "directorId": 6,
+  "movieName": "DJ Tillu",
+  "leadActor": "Sidhu J"
+}
+
+### 
+GET http://localhost:3000/movies/118
+
+###
+
+PUT http://localhost:3000/movies/118
+Content-Type: application/json
+
+{
+  "directorId": 24,
+  "movieName": "Jurassic Park",
+  "leadActor": "Christopher Hemsworth"
+}
+
+###
+DELETE http://localhost:3000/movies/118
+
+###
+GET http://localhost:3000/directors
+
+###
+GET http://localhost:3000/directors/24/movies/
